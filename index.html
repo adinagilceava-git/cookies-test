@@ -10,22 +10,16 @@
     <h1>Welcome to My Web Page</h1>
     <p>This is a paragraph styled with CSS.</p>
 
-
+<div>
     
-// Set cookies without SameSite=None; Secure (won't work over HTTP)
-document.cookie = "name=Oeschger; SameSite=Lax";
-document.cookie = "favorite_food=tripe; SameSite=Lax";
+<button onclick="showCookies()">Show cookies</button>
 
-function showCookies() {
-  const output = document.getElementById("cookies");
-  output.textContent = `> ${document.cookie}`;
-}
+<button onclick="clearOutputCookies()">Clear</button>
 
-function clearOutputCookies() {
-  const output = document.getElementById("cookies");
-  output.textContent = "";
-}
-
+<div>
+  <code id="cookies"></code>
+</div>
+</div>
     
 <script src="javascript.js"></script>
 </body>
