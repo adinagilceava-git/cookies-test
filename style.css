@@ -1,16 +1,1 @@
-/* Reset some defaults */
-body, h1, p {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styling */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #f0f8ff, #e6f7ff);
-    color: #333;
-    padding: 40px;
-    text-align: center;
-}
 
