@@ -9,18 +9,22 @@
 <body>
     <h1>Welcome to My Web Page</h1>
     <p>This is a paragraph styled with CSS.</p>
-<button onclick="showCookies()">Show cookies</button>
-<button onclick="clearOutputCookies()">Clear</button>
-<div>
-  <code id="cookies"></code>
-</div>
+
 
     
-<button onclick="showCookieValue()">Show cookie value</button>
-<button onclick="clearOutputCookieValue()">Clear</button>
-<div>
-  <code id="cookie-value"></code>
-</div>
+// Set cookies without SameSite=None; Secure (won't work over HTTP)
+document.cookie = "name=Oeschger; SameSite=Lax";
+document.cookie = "favorite_food=tripe; SameSite=Lax";
+
+function showCookies() {
+  const output = document.getElementById("cookies");
+  output.textContent = `> ${document.cookie}`;
+}
+
+function clearOutputCookies() {
+  const output = document.getElementById("cookies");
+  output.textContent = "";
+}
 
     
 <script src="javascript.js"></script>
