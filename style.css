@@ -1,5 +1,5 @@
 /* Reset some defaults */
-body, h1, p, button {
+body, h1, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,18 +27,3 @@ p {
     margin-bottom: 30px;
 }
 
-/* Button styling */
-button {
-    background-color: #0077cc;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #005fa3;
-}
