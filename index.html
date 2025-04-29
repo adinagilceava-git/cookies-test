@@ -6,6 +6,30 @@
     <title>My Web Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+    <script>
+        // Note that we are setting `SameSite=None;` in this example because the example
+// needs to work cross-origin.
+// It is more common not to set the `SameSite` attribute, which results in the default,
+// and more secure, value of `SameSite=Lax;`
+allCookies = document.cookie;
+document.cookie = "name=Oeschger; SameSite=None; Secure";
+document.cookie = "favorite_food=tripe; SameSite=None; Secure";
+
+function showCookies() {
+  const output = document.getElementById("cookies");
+  output.textContent = `> ${document.cookie}`;
+}
+
+function clearOutputCookies() {
+  const output = document.getElementById("cookies");
+  output.textContent = "";
+}
+    </script>
+    <script></script>
+    <script></script>
+    <script></script>
+    <script></script>
+    <script></script>
 <body>
     <h1>Welcome to My Web Page</h1>
     <p>This is a paragraph styled with CSS.</p>
