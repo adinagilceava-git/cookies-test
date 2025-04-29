@@ -11,6 +11,8 @@ function clearOutputCookies() {
   const output = document.getElementById("cookies");
   output.textContent = "";
 }
+
+
 // Note that we are setting `SameSite=None;` in this example because the example
 // needs to work cross-origin.
 // It is more common not to set the `SameSite` attribute, which results in the default,
