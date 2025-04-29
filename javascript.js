@@ -1,3 +1,4 @@
+document.cookie = newCookie;
 document.cookie = "name=Oeschger; SameSite=None; Secure";
 document.cookie = "favorite_food=tripe; SameSite=None; Secure";
 
