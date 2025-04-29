@@ -1,4 +1,4 @@
-document.cookie = newCookie;
+/*document.cookie = newCookie;
 document.cookie = "name=Oeschger; SameSite=None; Secure";
 document.cookie = "favorite_food=tripe; SameSite=None; Secure";
 
@@ -11,6 +11,8 @@ function clearOutputCookies() {
   const output = document.getElementById("cookies");
   output.textContent = "";
 }
+
+*/
 document.cookie = "test1=Hello; SameSite=None; Secure";
 document.cookie = "test2=World; SameSite=None; Secure";
 
